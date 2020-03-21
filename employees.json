@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "firstName": "Paul",
+    "lastName": "Kwon",
+    "email": "hyukjunkwon91@gmail.com",
+    "phone": "213-507-6713",
+    "position": "No-end Developer",
+    "department": "Development"
+  },
+  {
+    "id": 2,
+    "firstName": "Wilson",
+    "lastName": "Iam",
+    "email": "wilsonator@gmail.com",
+    "phone": "204-583-1827",
+    "position": "Front-end Developer",
+    "department": "Development"
+  },
+  {
+    "id": 3,
+    "firstName": "Chad",
+    "lastName": "ForReal",
+    "email": "chad@gmail.com",
+    "phone": "213-985-1234",
+    "position": "Back-end Developer",
+    "department": "Development"
+  },
+  {
+    "id": 4,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndope@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Sales Lead",
+    "department": "Sales"
+  },
+  {
+    "id": 5,
+    "firstName": "Miku",
+    "lastName": "Chan",
+    "email": "hatsunemiku@jmail.com",
+    "phone": "123-456-7890",
+    "position": "Salesperson",
+    "department": "Sales"
+  },
+  {
+    "id": 6,
+    "firstName": "Ashley",
+    "lastName": "Rodriguez",
+    "email": "a.rod@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Lead Engineer",
+    "department": "Engineering"
+  },
+  {
+    "id": 7,
+    "firstName": "Kevin",
+    "lastName": "Tupak",
+    "email": "shakur@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Software Engineer",
+    "department": "Engineering"
+  },
+  {
+    "id": 8,
+    "firstName": "Kunal",
+    "lastName": "Singh",
+    "email": "singhitforme@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Account Manager",
+    "department": "Finance"
+  },
+  {
+    "id": 9,
+    "firstName": "Malia",
+    "lastName": "Brown",
+    "email": "mbrown@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Accountant",
+    "department": "Finance"
+  },
+  {
+    "id": 10,
+    "firstName": "Sarah",
+    "lastName": "Lourd",
+    "email": "sarahlourd@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Legal Team Lead",
+    "department": "Legal"
+  },
+  {
+    "id": 11,
+    "firstName": "Tom",
+    "lastName": "Allen",
+    "email": "spidey@gmail.com",
+    "phone": "123-456-7890",
+    "position": "Lawyer",
+    "department": "Legal"
+  }
+]
