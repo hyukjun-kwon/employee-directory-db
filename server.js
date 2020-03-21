@@ -7,6 +7,11 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.get('/employees', (req, res) => {
   db.Employee.findAll({})
   .then(Employees => res.json(Employees));
