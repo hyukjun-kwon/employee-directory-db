@@ -19,21 +19,25 @@ app.get('/employees', (req, res) => {
   .then(Employees => res.json(Employees));
 });
 
-app.post('/employees', (req, res) => {
-  db.Employee.create(req.body)
-  .then(response => {
-    res.json(response)
-  });
+app.get('/findEmployee/:id', (req, res) => {
+  db.Employee.findOne({
+    where: {
+      id: req.params.id
+    }
+  }).then(response => res.json(response));
 });
 
-app.put('/updateEmployee/:id', (req,res) => {
+app.post('/employees', (req, res) => {
+  db.Employee.create(req.body)
+  .then(response => res.json(response));
+});
+
+app.put('/updateEmployee/:id', (req, res) => {
   db.Employee.update(req.body, {
     where: {
       id: req.params.id
     }
-  }).then(response => {
-    res.json(response);
-  });
+  }).then(response => res.json(response));
 });
 
 app.delete('/removeEmployee/:id', (req, res) => {
@@ -41,15 +45,11 @@ app.delete('/removeEmployee/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(response => {
-    res.json(response);
-  })
-})
+  }).then(response => res.json(response));
+});
 
 // =============================================================
 const PORT = process.env.PORT || 8080;
 db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
+  app.listen(PORT, () => console.log("App listening on PORT " + PORT));
 });
